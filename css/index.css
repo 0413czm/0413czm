@@ -40,10 +40,9 @@
 .header .index-ul li a:hover {
   color: #fff;
 }
-.swiper-container {
-  width: 100%;
-  height: 500px;
-}  
-.swiper-container img{
-  width: 100%;
+.content {
+  width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 50px;
 }
