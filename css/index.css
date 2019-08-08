@@ -14,9 +14,11 @@
 .header .logo span {
   font-size: 12px;
   margin-left: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .header .logo a {
   color: #9d9d9d;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .header .logo a:hover {
   color: #fff;
@@ -35,14 +37,52 @@
   display: block;
   font-size: 16px;
   color: #9d9d9d;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
 .header .index-ul li a:hover {
   color: #fff;
 }
+.banner {
+  padding-top: 50px;
+  height: 380px;
+  width: 100%;
+  position: relative;
+}
+.banner h1 {
+  position: absolute;
+  font-size: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120px;
+  color: #fff;
+  z-index: 10;
+}
+.banner h2 {
+  position: absolute;
+  font-size: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 140px;
+  color: #fff;
+  z-index: 10;
+}
+.banner .model-box {
+  width: 100%;
+  height: 380px;
+  background-color: #000;
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: 2;
+}
+.banner img {
+  height: 380px;
+  width: 100%;
+}
 .content {
   width: 1200px;
   overflow: hidden;
   margin: 0 auto;
-  padding-top: 50px;
 }

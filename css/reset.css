@@ -22,7 +22,7 @@ select {
   padding: 0;
 }
 body {
-  font: 12px '宋体', 'Arial Narrow', HELVETICA;
+  font: 12px 'Segoe UI', 'Tahoma', 'Arial Narrow', HELVETICA;
   background: #fff;
   -webkit-text-size-adjust: 100%;
 }
