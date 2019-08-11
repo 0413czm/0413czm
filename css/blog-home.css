@@ -6,3 +6,11 @@
 body {
   padding-top: 56px;
 }
+.swiper-container{
+  width: 100%;
+  height: 300px;
+}
+.list-unstyled li a{
+  color: #FEC007 !important;
+  text-decoration: none;
+}
