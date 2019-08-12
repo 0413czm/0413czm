@@ -3,18 +3,3 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
  */
-body {
-  padding-top: 56px;
-}
-.swiper-container {
-  width: 350px;
-  height: 300px;
-}  
-.swiper-container .swiper-wrapper img {
-  width: 350px;
-  height: 300px;
-}  
-.list-unstyled li a{
-  color: #FEC007 !important;
-  text-decoration: none;
-}
