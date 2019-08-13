@@ -1,6 +1,7 @@
 /* 响应式处理 */
 /* @media screen and (max-width: 750px) {
 } */
+
 .header {
   height: 30px;
   width: 1200px;
@@ -122,78 +123,62 @@
 .content-box .con_left{
   flex: 1;
 }
+/* 留言部分 */
+.Breadcrumb{
+  height: 20px;
+  line-height: 20px;
+  margin-top: 5px;
+}
+.Breadcrumb p {
+  color: #808080;
+}
+.Breadcrumb p span.active-sp{
+  color: #0d3d88;
+  margin-left: 5px;
+  cursor: pointer;
+}
+/* 主题内容部分 */
 .content-box .con_left ul li{
-  height: 170px;
-  border-bottom: 1px #ddd dotted;
-  padding: 20px;
+  height: 87px;
+  width: 850px;
+  display: flex;
+  border: 1px solid #ddd;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.content-box .con_left ul li .title{
+  flex: 1;
+  background-color: #F9F9F9;
+  padding: 5px;
   box-sizing: border-box;
+  font-size: 14px;
 }
-.content-box .con_left ul li .left-date{
-  width: 50px;
-  height: 50px;
-  float:left;
-  background-color: #FF617F;
+.content-box .con_left ul li .title p span:nth-child(1){
+  color: #ea644a;
+  margin-right: 10px;
+}
+.content-box .con_left ul li .title p a{
+  float: right;
+  margin-right: 10px;
+  color: #348DEE;
+}
+.content-box .con_left ul li .text{
+  flex: 1;
+  background-color: #F6F6F6;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.content-box .con_right .sendMessage{
+  height: 40px;
+  width: 300px;
   text-align: center;
+  background-color: #348DEE;
   color: #FFF;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 24px;
-}
-.content-box .con_left ul li .p1{
-  color: #FF617F;
-  margin-left: 60px;
-  line-height: 30px;
-  font-size: 16px;
-  font-weight: 700;
-}
-.content-box .con_left ul li .p2{
-  font-size: 14px;
-  color: #333 !important;
-  line-height: 25px;
-}
-.content-box .con_left ul li .p3{
-  font-size: 12px;
-  color: #999999;
-  line-height: 12px;
-  margin-top: 10px;
-}
-.content-box .con_left ul li .p3 i{
-  font-size: 12px;
-  color: #999999;
-  line-height: 12px;
-  margin-top: 2px;
-  margin-right: 2px;
-}
-.content-box .con_left ul li .p2 span{
-  display: inline;
-  padding: .2em .6em .2em;
-  font-size: 75%;
-  font-size: 14px;
-  padding-left: 10px;
-  color: rgb(2, 2, 2);
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
-}
-
-.content-box .con_left ul li .p1 span{
-  display: inline;
-  padding: .2em .6em .2em;
-  font-size: 75%;
-  line-height: 1;
-  color: rgb(2, 2, 2);
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
-  background-color: rgb(18, 214, 240);
-}
-.content-box .con_left ul li .p1 span.gan{
-  font-size: 16px;
-  color: #ff6100;
-  background-color: #FFF;
-  
+  line-height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .content-box .con_right .wechat{
   height: 250px;
