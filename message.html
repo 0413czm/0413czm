@@ -89,33 +89,7 @@
         <div class="con_left">
            <!-- 不同的地方在于这里 -->
            <ul>
-             <li>
-               <div class="title">
-                <p><span>橘子园 </span> <span>2019-04-29 23:11:20</span>  <a href="#">回复</a> </p>
-               
-               </div>
-               <div class="text">
-                网站挺不错的，以后想要学习服务器相关的知识可以来这逛逛，橘子园https://juzihuang.com/站长前来拜读
-               </div>
-             </li>
-             <li>
-               <div class="title">
-                <p><span>橘子园 </span> <span>2019-04-29 23:11:20</span>  <a href="#">回复</a> </p>
-               
-               </div>
-               <div class="text">
-                网站挺不错的，以后想要学习服务器相关的知识可以来这逛逛，橘子园https://juzihuang.com/站长前来拜读
-               </div>
-             </li>
-             <li>
-               <div class="title">
-                <p><span>橘子园 </span> <span>2019-04-29 23:11:20</span>  <a href="#">回复</a> </p>
-               
-               </div>
-               <div class="text">
-                网站挺不错的，以后想要学习服务器相关的知识可以来这逛逛，橘子园https://juzihuang.com/站长前来拜读
-               </div>
-             </li>
+            
            </ul>
         </div>
         <div class="con_right">
@@ -185,9 +159,23 @@
     <div class="footer">
       © 2018-2019 个人博客 个人网站 CAIZHIMING
     </div>
+    <script type="text/html" id="msgTmp">
+      {{each result v i}}
+      <li>
+          <div class="title">
+           <p><span>{{v.author}} </span> <span>{{v.time}}</span>  <a href="#">回复</a> </p>
+          </div>
+          <div class="text">
+           {{v.content}}
+          </div>
+        </li>
+        {{/each}}
+    </script>
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="./js/common.js"></script>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script type="text/JavaScript" src="./data/message.json"></script>
+    <script src="./js/message.js"></script>
     <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <!-- <script src="./node_modules/swiper/dist/js/swiper.js"></script> -->
   </body>

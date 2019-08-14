@@ -104,6 +104,7 @@
   text-align: center;
   border-right: 1px solid #fff;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .nav-bar-item:hover{
   background-color: #F1941C;
