@@ -29,6 +29,7 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-blog-home.git"
     },
     "dependencies": {
+        "art-template": "^4.13.2",
         "bootstrap": "4.3.1",
         "jquery": "3.4.1",
         "swiper": "^4.5.0"

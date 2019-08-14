@@ -116,6 +116,16 @@
   display: flex;
   margin-top: 20px;
 }
+.content-box .con_left .swiper-container{
+  width: 800px;
+  height: 300px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.content-box .con_left .swiper-container .swiper-slide img{
+  width: 800px;
+  height: 300px;
+}
 .content-box .con_right{
   width: 300px;
 }
