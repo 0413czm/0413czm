@@ -9,8 +9,10 @@ window.onload = function() {
       el: '.swiper-pagination',
       clickable :true,
     },
-    autoplay: true
-  })              
+    autoplay:{
+      delay: 3000,//1秒切换一次
+    }
+  })    
 }
 
 
