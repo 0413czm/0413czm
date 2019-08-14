@@ -319,3 +319,18 @@
   height: 150px;
   border-radius: 2px;
 }
+.modal .modal-box .modal-footer{
+  height: 50px;
+  margin-top: 20px;
+  padding-left:20px;
+}
+.modal .modal-box .modal-footer button{
+  width: 70px;
+  height: 30px;
+  background-color: #F1941C;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+
+}
