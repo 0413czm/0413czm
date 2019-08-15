@@ -30,7 +30,6 @@
   font-size: 30px;
   color: #ea644a;
   padding-right: 30px;
-  border-right: 1px solid #d6d6d6;
 }
 .intrdules .intr_left span.sp2 {
   font-size: 14px;
@@ -137,14 +136,14 @@
   margin-left: 5px;
   cursor: pointer;
 }
-/* 主题内容部分 */
+
 .content-box .con_left ul li{
-  height: 87px;
   width: 850px;
   display: flex;
   border: 1px solid #ddd;
   flex-direction: column;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 .content-box .con_left ul li .title{
   flex: 1;
@@ -168,6 +167,11 @@
   padding: 5px;
   box-sizing: border-box;
   font-size: 14px;
+}
+.content-box .con_left ul li .text .repay{
+  width: 100%;
+  padding: 10px;
+  background-color: skyblue;
 }
 .content-box .con_right .sendMessage{
   height: 40px;
@@ -327,10 +331,337 @@
 .modal .modal-box .modal-footer button{
   width: 70px;
   height: 30px;
-  background-color: #F1941C;
+  background-color: #3280fc;
   color: white;
   border-radius: 5px;
   font-size: 16px;
   border: none;
 
+}
+
+/* 响应式布局媒体查询 */
+/* 主题内容部分 */
+@media screen and (max-width: 750px) {
+  .index.simple{
+    width: 350px;
+    margin: 0 auto;
+  }
+  .header {
+    height: 30px;
+    width:350px;
+    line-height: 30px;
+    position: relative;
+  }
+  .header p {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header p a {
+    margin-left: 10px;
+    color: #0d3d88;
+  }
+  .intrdules {
+    height: 58px;
+    width: 350px;
+    display: flex;
+    line-height: 58px;
+  }
+  .intrdules .intr_left {
+    flex: 1;
+  }
+  .intrdules .intr_left span.sp1 {
+    font-size: 30px;
+    color: #ea644a;
+    padding-right: 30px;
+    
+  }
+  .intrdules .intr_left span.sp2 {
+    font-size: 14px;
+    color: #474546;
+    padding-left: 20px;
+    display: none;
+  }
+  .intrdules .intr_right {
+    flex: 1;
+    position: relative;
+    display: none;
+  }
+  .intrdules .intr_right .serach {
+    width: 236px;
+    height: 35px;
+    float: right;
+    margin-top: 20px;
+    position: relative;
+    display: none;
+  }
+  .intrdules .intr_right .serach input {
+    width: 236px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding-left: 30px;
+  }
+  .intrdules .intr_right .serach i {
+    font-size: 16px;
+    color: #ea644a;
+    position: absolute;
+    left: 5px;
+    top: 0px;
+  }
+  
+  .nav {
+    width: 350px;
+    height: 100px;
+    display: flex;
+    margin-top: 20px;
+  }
+  .nav .nav-item {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+  }
+  .nav .nav-item img {
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: all .5s;
+  }
+  .nav .nav-item img:hover {
+    box-shadow: 2px 2px #d3d2d1;
+  }
+  .nav .nav-item p {
+    font-size: 14px;
+    margin-top: 3px;
+  }
+  .nav .nav-item p:hover {
+    color: #ea644a;
+  }
+  .nav-bar{
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ea644a;
+    display: flex;
+  }
+  .nav-bar-item{
+    flex: 1;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+  }
+  .nav-bar-item:hover{
+    background-color: #F1941C;
+  }
+  .nav-bar-item:last-child{
+    border-right:none;
+  }
+  .content-box{
+    width: 350px;
+    display: flex;
+    margin-top: 20px;
+  }
+  .content-box .con_right{
+    width: 300px;
+    display: none;
+  }
+  .content-box .con_left{
+    flex: 1;
+  }
+  .content-box .con_left ul li{
+    width: 350px;
+    display: flex;
+    border: 1px solid #ddd;
+    flex-direction: column;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+  .content-box .con_left ul li .title{
+    flex: 1;
+    background-color: #F9F9F9;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .content-box .con_left ul li .title p span:nth-child(1){
+    color: #ea644a;
+    margin-right: 10px;
+  }
+  .content-box .con_left ul li .title p a{
+    float: right;
+    margin-right: 10px;
+    color: #348DEE;
+  }
+  .content-box .con_left ul li .text{
+    flex: 1;
+    background-color: #F6F6F6;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .content-box .con_left ul li .text .repay{
+    width: 100%;
+    padding: 10px;
+    background-color: skyblue;
+  }
+  .content-box .con_right .sendMessage{
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    background-color: #348DEE;
+    color: #FFF;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .content-box .con_right .wechat{
+    height: 250px;
+    width: 300px;
+    text-align: center;
+  }
+  .content-box .con_right .wechat img{
+    display: block;
+    width: 230px;
+    height: 230px;
+    margin: 0 auto;
+  }
+  .content-box .con_right .wechat p{
+    text-align: center;
+    color: #FF617F;
+  }
+  /* 右侧i内容模块 */
+  .con_right .right-info{
+    width: 300px;
+    margin-top: 20px;
+  }
+  .con_right .right-info .top{
+    width: 300px;
+    height: 37px;
+    background-color: #FF617F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 20px;
+    line-height: 14px;
+  }
+  .con_right .right-info .top i{
+    color: #fff;
+    margin-right: 5px;
+  }
+  .con_right .right-info ul li{
+    padding: 5px;
+    box-sizing: border-box;
+    color: #333;
+    height: 30px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+  
+  }
+  .con_right .right-info ul{
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  .con_right .right-info ul li div{
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background-color: #ccc;
+  }
+  /* 模态框样式 */
+.modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color:rgba(0 , 0, 0 , .5);
+  display: none;
+}
+.modal .modal-box{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  width: 300px;
+  height: 250px;
+  box-shadow: 2px 2px 5px rgb(5, 5, 5); 
+  border-radius: 5%;
+}
+.modal .modal-box .modal-header{
+  height: 25px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.modal .modal-box .modal-header p{
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 25px;
+  font-size: 14px;
+}
+.modal .modal-box .modal-header p span:nth-child(1){
+ font-size: 16px;
+}
+.modal .modal-box .modal-header p span:nth-child(2){
+  float: right;
+  cursor: pointer;
+}
+.modal .modal-box .modal-center{
+  padding: 20px;
+  width: 100%;
+  height: 350px;
+  box-sizing: border-box;
+}
+.modal .modal-box .modal-center p{
+  height: 25px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+.modal .modal-box .modal-center p span{
+  color: #000;
+  font-weight: 700;
+}
+.modal .modal-box .modal-center p input{
+  width: 180px;
+  height: 25px;
+  border-radius: 2px;
+}
+.modal .modal-box .modal-center p:nth-child(3){
+  line-height: 100px;
+  height: 100px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+#content{
+  width: 150px;
+  height: 100px;
+  border-radius: 2px;
+}
+.modal .modal-box .modal-footer{
+  height: 30px;
+  margin-top: 5px;
+  padding-left:20px;
+}
+.modal .modal-box .modal-footer button{
+  width: 50px;
+  height: 30px;
+  background-color: #3280fc;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+
+}
 }
