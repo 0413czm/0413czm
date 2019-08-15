@@ -7,6 +7,9 @@ $('.content-box .con_left ul').html(template('msgTmp',message));
 $('.modal-header .shanchu').on('click',function (){
     $('.modal').css('display','none');
 })
-$('.replay').on('click',function (){
-    $('.modal').css('display','block');
+$('.title').on('click','.replay',function (){
+    $(this).parent().parent().siblings('.text').find('.repay').css('display','block');
+})
+$('.repay .sendMessage').on('click',function (){
+    $(this).parent().parent().css('display','none');
 })

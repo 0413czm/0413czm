@@ -74,6 +74,9 @@
   text-align: center;
   cursor: pointer;
 }
+.nav .nav-item a{
+  text-decoration: none;
+}
 .nav .nav-item img {
   height: 50px;
   border-radius: 50%;
@@ -253,6 +256,14 @@
     border-right: 1px solid #fff;
     box-sizing: border-box;
     cursor: pointer;
+  }
+  .nav-bar-item a{
+    color: #FFF;
+    text-decoration: none;
+  }
+  .nav .nav-item a{
+    text-decoration: none;
+    
   }
   .nav-bar-item:hover{
     background-color: #F1941C;

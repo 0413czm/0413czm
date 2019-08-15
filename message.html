@@ -62,7 +62,7 @@
       <!-- 导航 -->
       <div class="nav-bar">
         <div class="nav-bar-item">
-          首页
+          <a href="./index.html">首页</a>
         </div>
         <div class="nav-bar-item">
           web前端
@@ -89,7 +89,7 @@
         <div class="con_left">
            <!-- 不同的地方在于这里 -->
            <ul>
-            
+
            </ul>
         </div>
         <div class="con_right">
@@ -179,10 +179,13 @@
       {{each result v i}}
       <li>
           <div class="title">
-           <p><span>{{v.author}} </span> <span>{{v.time}}</span>  <a href="#" class="replay">回复</a> </p>
+           <p><span>{{v.author}} </span> <span>{{v.time}}</span>  <a href="JavaScript:;" class="replay">回复</a> </p>
           </div>
           <div class="text">
            {{v.content}}
+           <div class="repay">
+              <p class="ofh"><input type="text" placeholder="回复"><span class="sendMessage">发表</span></p>
+           </div>
           </div>
         </li>
         {{/each}}
